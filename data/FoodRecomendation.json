@@ -1,0 +1,38 @@
+[
+    { 
+        "id": 1, 
+        "name": "Warung Madh'toya, Goa Gong", 
+        "jenis": "Chinese food", 
+        "jarak": "0.2 km", 
+        "image": "madhtoya.png", 
+        "rating": 4.8, 
+        "href": "/umkm/madhtoya"
+    },
+    { 
+        "id": 2, 
+        "name": "Warung Puspa Masakan Khas Singaraja, Uluwatu", 
+        "jenis": "Aneka nasi (babi + ayam)", 
+        "jarak": "0.5 km", 
+        "image": "nasi-campur.png" , 
+        "rating": 4.6, 
+        "href": "/umkm/puspa"
+    },
+    { 
+        "id": 3, 
+        "name": "Warung Nasi Ayam Bu Oki", 
+        "jenis": "Warung Nasi Ayam Bu Oki", 
+        "jarak": "2.1 km", 
+        "image": "nasi-campur.png", 
+        "rating": 4.8, 
+        "href": "/umkm/bu-oki"
+    },
+    { 
+        "id": 4, 
+        "name": "Padang Murah, Graha Anyar", 
+        "jenis": "Masakan khas padang", 
+        "jarak": "1 km", 
+        "image": "padang.png", 
+        "rating": 4.7, 
+        "href": "/umkm/padang-murah"
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "detail_umkm" : [
+            {
+                "name" : "Warung Puspa Masakan Khas Singaraja, Uluwatu",
+                "type" : "Aneka nasi (babi + ayam)",
+                "address" : "Jl. Goa Gong No.6, Jimbaran",
+                "work_hour" : "09.00 - 21.00 WITA",
+                "rating" : [
+                    {
+                        "star" : 4.6,
+                        "review" : "3k"
+                    }
+                ],
+                "is_halal" : false,
+                "price" : "10k - 50k",
+                "hygienic" : [
+                    {
+                        "is_hygiene" : true,
+                        "rating" : 200
+                    }
+                ],
+                "image" : "madhtoya.png"
+            }
+        ],
+        "review" : [
+            
+        ]
+    },
+    {
+        "recomended" : [
+            {
+                "id" : 1,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 0
+            }
+        ]
+    },
+    {
+        "makanan" : [
+            {
+                "id" : 1,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 10
+            },
+            {
+                "id" : 5,
+                "name" : "Nasi Goreng",
+                "price" : 10000,
+                "image" : "nasi-goreng.png",
+                "stock" : 0
+            }
+        ]
+    },
+    {
+        "minuman" : [
+            {
+                "id" : 1,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            },
+            {
+                "id" : 2,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 0
+            },
+            {
+                "id" : 3,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            },
+            {
+                "id" : 4,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 0
+            },
+            {
+                "id" : 5,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            }
+        ]
+    }
+]
