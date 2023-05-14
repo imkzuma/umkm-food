@@ -89,7 +89,7 @@ export default function Navbar(){
                                 </Text>
                             </Flex>
                             <Text display = {{ base: 'none', md: 'block' }}>
-                                Gang Memek, Jalan berbulu, No.69
+                                Pilih Lokasi Antar
                             </Text>
                             
                         </Flex>
