@@ -99,7 +99,7 @@ export default function HeroUmkm({ detail }){
                                             {isUmkmOpen(item.work_hour)? "Open" : "Closed"}
                                         </Button>
                                         <Text color = {'gray.600'}>
-                                            {item.work_hour}
+                                            { item.work_hour === 24 ? '24 Hours' : item.work_hour }
                                         </Text>
                                     </Flex>
                                 </Stack>
