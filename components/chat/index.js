@@ -60,7 +60,7 @@ export default function ChatComponent(){
                                 pos = {'fixed'} right = {2} bottom = {2} left = {2}
                                 alignItems={'center'}
                             >
-                                <InputGroup>
+                                <InputGroup size = "md">
                                     <Input 
                                         type = {'text'} 
                                         placeholder = {'Type a message'} 
@@ -68,13 +68,18 @@ export default function ChatComponent(){
                                         onBlur={ handleBlurMessage }
                                         value = { sendChat }
                                         ref = { inputRef }
+                                        pr='4.5rem'
                                     />
-                                    <InputRightElement 
-                                        bg = {'blue.500'}
-                                        color = {'white'}
-                                        onClick={(e) => handleSendMessage(e) }
-                                    >
-                                        Send
+                                    <InputRightElement width='4.5rem'>
+                                        <Button 
+                                            bg = {'blue.400'}
+                                            color = {'white'}
+                                            _hover = {{ bg: 'blue.500' }}
+                                            size='sm' 
+                                            onClick={(e) => handleSendMessage(e)}
+                                        >
+                                            Send
+                                        </Button>
                                     </InputRightElement>
                                 </InputGroup>
                             </Flex>
