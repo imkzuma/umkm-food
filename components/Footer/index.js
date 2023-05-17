@@ -17,8 +17,8 @@ export default function Footer(){
                         lg: 6
                     }}
                 >
-                    <Stack color = {'white'} spacing = {7}>
-                        <Flex gap = {16}>
+                    <Stack color = {'white'} spacing = {7} textAlign={{base: 'center', md: 'start'}}>
+                        <Flex gap = {16} justifyContent={{base: 'center', md: 'start'}}>
                             <Text fontWeight={'700'} fontSize={'16px'}>
                                 Privacy Policy
                             </Text>
