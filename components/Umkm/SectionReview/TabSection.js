@@ -51,6 +51,21 @@ export default function TabReview({ detail }){
         return [...yellowStars, ...greyStars];
     }
 
+    if(!review || review.length === 0){
+        return(
+            <Flex 
+                justifyContent={'center'} 
+                alignItems={'center'} 
+                minH = {'300px'} 
+                w = {'full'}
+            >
+                <Text color = {'#909090'}>
+                    Belum ada review
+                </Text>
+            </Flex>
+        )
+    }
+
     return(
         <Accordion 
             allowMultiple
