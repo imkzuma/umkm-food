@@ -1,0 +1,161 @@
+[
+    {
+        "detail_umkm" : [
+            {
+                "name" : "Warung Nasi Ayam Bu Oki",
+                "type" : "Nasi Ayam",
+                "address" : "Perumahan Puri Jimbaran, Jln Celaga Basur No 3Y, Uluwatu 2, Jimbaran, Jimbaran Indonesia",
+                "work_hour" : "07.00 - 18.00 WITA",
+                "rating" : [
+                    {
+                        "star" : 4.1,
+                        "review" : "482"
+                    }
+                ],
+                "is_halal" : true,
+                "price" : "10k - 50k",
+                "hygienic" : [
+                    {
+                        "is_hygiene" : true,
+                        "rating" : 200
+                    }
+                ],
+                "image" : "bu-oki.webp"
+            }
+        ],
+        "review" : [
+            {
+                "id": 1,
+                "name": "Tjangsuling",
+                "review": "Makanannya enak dan tidak ribet. Tempatnya juga lumayan bersih, makannya cepet keluar juga hanya ada 2 pilihan pedas dan tidak pedas jadi ya cocok lah buat yang bawa anak anak juga",
+                "date_review": "22/03/2022",
+                "star": 5,
+                "like": 10,
+                "dislike": 2,
+                "replied" : null
+            },
+            {
+                "id": 2,
+                "name": "Siabejalanmulu",
+                "review": "Nasi campur hits yang selalu banyak penggemarnya menjadi pilihan untuk makan siang. Gojek danGrab juga mendukung bagi yang tidak bisa ke tempat.",
+                "date_review": "10/02/2021",
+                "star": 5,
+                "like": 5,
+                "dislike": 0,
+                "replied" : null
+            },
+            {
+                "id": 3,
+                "name": "Millyas",
+                "review": "Nasi ayam nya joss. Variasi ayamnya enaak. Pedesnya sangat tolerable alias bikin dower. Tempatnya industrial ga pake ac ac an",
+                "date_review": "23/11/2019",
+                "star": 5,
+                "like": 9,
+                "dislike": 1,
+                "replied" : null
+            },
+            {
+                "id": 4,
+                "name": "Henry Willem",
+                "review": "Warungnya ngga besar amat, tapi ngga pernah sepi pengunjung. Porsinya lumayan banyak, bumbu masakan khas Bali terasa kuat sekali dalam setiap lauknya. Pedas iya.. Cuma kalo mau dipesan untuk yang tidak pedas dan buat anak bisa di request. Untuk pencinta masakan pedes anda layak ke Warung Nasi Ayam Bu Oki ini.",
+                "date_review": "31/08/2019",
+                "star": 5,
+                "like": 4,
+                "dislike": 0,
+                "replied" : null
+            },
+            {
+                "id": 5,
+                "name": "Lulu siana",
+                "review": "Waktu ke Bali, makan menu ini sampai 3 kali karena enak sekali. Satu porsi nasi ayam ini berisi ayam betutu, sate lilit, ayam goreng, telur, ati ayam, pepes, lawar, kacang goreng, dan sambel matah. Untuk rasanya, juara! Semua bumbunya berani, rempahnya kerasa banget dan porsinya juga ga pelit. Selain itu harganya pun sangat ramah di kantong, cukup 25ribu rupiah untuk satu porsi nasi ayam komplit dengan porsi melimpah. Tapi sayangnya makanan ini tidak tahan lama, jadi hanya bisa dinikmati di Bali. Salah satu kuliner terbaik di Bali, wajib di coba!",
+                "date_review": "07/08/2019",
+                "star": 4,
+                "like": 4,
+                "dislike": 2,
+                "replied" : null
+            }
+        ]
+    },
+    {
+        "recomended" : [
+            {
+                "id" : 1,
+                "name" : "Nasi Campur Biasa",
+                "price" : 10000,
+                "image" : "bu-oki-campur-10k.jpg",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Nasi Campur Spesial",
+                "price" : 15000,
+                "image" : "bu-oki-campur-15k.jpg",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Es Jeruk",
+                "price" : 5000,
+                "image" : "es-jeruk.jpg",
+                "stock" : 0
+            }
+        ]
+    },
+    {
+        "makanan" : [
+            {
+                "id" : 1,
+                "name" : "Nasi Campur Biasa",
+                "price" : 10000,
+                "image" : "bu-oki-campur-10k.jpg",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Nasi Campur Spesial",
+                "price" : 15000,
+                "image" : "bu-oki-campur-15k.jpg",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Sate Lilit Ayam",
+                "price" : 5000,
+                "image" : "bu-oki-sate-5k.jpg",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Nasi Ayam Spesial Jumbo",
+                "price" : 20000,
+                "image" : "bu-oki.webp",
+                "stock" : 10
+            }
+        ]
+    },
+    {
+        "minuman" : [
+            {
+                "id" : 1,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            },
+            {
+                "id" : 2,
+                "name" : "Es Jeruk",
+                "price" : 5000,
+                "image" : "es-jeruk.jpg",
+                "stock" : 1
+            }
+        ]
+    }
+]
