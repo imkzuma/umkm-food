@@ -21,7 +21,7 @@ export default function Home() {
       <main>
         <MainLayout>
           <LandingHero />
-          <Box px = {{ md: '138px', base: '5px' }}>
+          <Box px = {{ lg: '138px', md: '25px', base: '5px' }}>
             <SectionKategori />
             <SectionRekomendasi />
           </Box>
