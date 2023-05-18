@@ -23,11 +23,26 @@ export default function SectionRekomendasi(){
         <Box
             pb = {{ base: '80px' }}
         >
-            <Center>
-                <Text fontSize = {'24px'} fontWeight={'bold'}>
+            <Stack 
+                justifyContent={{ base: 'start', md:'center' }} 
+                alignItems={{ base: 'start', md:'center' }} 
+                textAlign={{md: 'center'}} 
+                spacing = {4}
+            >
+                <Heading 
+                    size = {{ base: "lg", md: "xl" }}
+                    fontWeight={"semibold"}
+                >
                     Want advice? Check this out
+                </Heading>
+                <Text 
+                    w = {{ md: '600px', base: 'full' }} 
+                    color = {'gray.500'}
+                >
+                    Come on, check out our collection of popular foods, local foodies 
+                    favorites, and our best offers at your location!
                 </Text>
-            </Center>
+            </Stack>
             <Grid
                 gridTemplateColumns={'repeat(12, 1fr)'}
                 gap = {'24px'}
