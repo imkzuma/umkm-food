@@ -6,7 +6,7 @@ export default function LandingHero(){
         <>
             <HeroComponent />
             <HeroSearch 
-                marginTop = {{ base: '-70px' }}
+                marginTop = {'-70px'}
             />
         </>
     )
