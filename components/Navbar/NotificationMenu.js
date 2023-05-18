@@ -10,16 +10,15 @@ export default function NotificationMenu(){
                 icon={
                     <Icon as = {FaBell} 
                         fontSize = "xl" 
-                        
                         cursor = {'pointer'}
                     /> 
                 }
                 color = {'#727272'}
                 _hover={{
-                    color: "gray.600"
+                    color: "#E52535"
                 }}
                 _active={{
-                    color: "gray.600"
+                    color: "#E52535"
                 }}
                 bg = {'transparent'}
             />
