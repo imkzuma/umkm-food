@@ -143,7 +143,7 @@ export default function TabReview({ detail }){
                                                     </Button>
                                                     <Text fontSize={'14px'} color = {'#909090'}>
                                                         {isLiked.map((like) => (
-                                                            like.id === item.id ? like.like : ''
+                                                            like.id === item.id ? like.like > 0 ? like.like : '' : ''
                                                         ))}
                                                     </Text>
                                                 </Flex>
@@ -159,7 +159,7 @@ export default function TabReview({ detail }){
                                                     </Button>
                                                     <Text fontSize={'14px'} color = {'#909090'}>
                                                         {isDisliked.map((dislike) => (
-                                                            dislike.id === item.id ? dislike.dislike : ''
+                                                            dislike.id === item.id ? dislike.dislike > 0 ? dislike.dislike : '' : ''
                                                         ))}
                                                     </Text>
                                                 </Flex>
