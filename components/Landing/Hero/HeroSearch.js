@@ -34,7 +34,6 @@ export default function HeroSearch({...props}){
         })
     };
     
-
     return(
         <Flex 
             pos = {'relative'} zIndex = {1}
@@ -44,7 +43,8 @@ export default function HeroSearch({...props}){
             {...props}
         >
             <Box 
-                minW={!isOpen ?{ md: '450px' }:{ md:'720px'}} maxW={!isOpen ?{ md: '450px' }:{ md:'720px'}}
+                minW={!isOpen ?{ base: '315px', md: '450px' }:{ base: '315px', md:'720px'}} 
+                maxW={!isOpen ?{ base: '315px', md: '450px' }:{ base: '315px', md:'720px'}}
                 minH={'120px'}
                 bg={'white'}
                 roundedTop={'13px'}
@@ -71,24 +71,23 @@ export default function HeroSearch({...props}){
                             }}
                         />
                     </InputGroup>
-                    {   !isOpen?
-                        <Flex gap = {2} alignItems={'center'}>
-                            <Text fontSize={'14px'} fontWeight={'600'} color = {'#494A4A'}>
-                                Trending: 
-                            </Text>
-                            <Text fontSize={'14px'} fontWeight={'600'} color = {'#494A4A80'}>
-                                {TrendingSearch.map((item,index) => { 
-                                    return (
-                                        item.name + (index < TrendingSearch.length - 1 ? ', ' : '') 
-                                    )
-                                })}
-                            </Text>
-                        </Flex>
-                        :
-                        <Flex alignItems={'center'} justifyContent={'space-between'} gap = {3}>
-                            <Text fontWeight={'semibold'}>Recent Searches</Text>
-                            <Button size={'sm'} onClick = {clearSearchHistory}>Clear</Button>
-                        </Flex>
+                    {!isOpen
+                        ?   <Flex gap = {2}>
+                                <Text fontSize={'14px'} fontWeight={'600'} color = {'#494A4A'}>
+                                    Trending: 
+                                </Text>
+                                <Text fontSize={'14px'} fontWeight={'600'} color = {'#494A4A80'}>
+                                    {TrendingSearch.map((item,index) => { 
+                                        return (
+                                            item.name + (index < TrendingSearch.length - 1 ? ', ' : '') 
+                                        )
+                                    })}
+                                </Text>
+                            </Flex>
+                        :   <Flex alignItems={'center'} justifyContent={'space-between'} gap = {3}>
+                                <Text fontWeight={'semibold'}>Recent Searches</Text>
+                                <Button size={'sm'} onClick = {clearSearchHistory}>Clear</Button>
+                            </Flex>
                     }
                 </Stack>
                 <Fade in = {isOpen}>
@@ -108,19 +107,18 @@ export default function HeroSearch({...props}){
                         >
                             {dataHistory === null || dataHistory.length === 0 
                                 ? <Text align={'center'} color = 'gray.500'>No History</Text> 
-                                : dataHistory.map((item,index) => {
-                                    return(
-                                        <GridItem key = { index } 
-                                            gridColumn={{
-                                                base: 'span 5',
-                                                md: 'span 1'
-                                            }}
-                                        >
-                                            <Button color = {'gray.500'} _hover = {{color:'gray.800'}} rounded = {'13px'} variant = {'outline'} w = {'full'}>
-                                                {item.name}
-                                            </Button>
-                                        </GridItem>
-                                    )})
+                                : dataHistory.map((item,index) => (
+                                    <GridItem key = { index } 
+                                        gridColumn={{
+                                            base: 'span 5',
+                                            md: 'span 1'
+                                        }}
+                                    >
+                                        <Button color = {'gray.500'} _hover = {{color:'gray.800'}} rounded = {'13px'} variant = {'outline'} w = {'full'}>
+                                            {item.name}
+                                        </Button>
+                                    </GridItem>
+                                ))
                             }
                         </Grid>
 
@@ -129,21 +127,19 @@ export default function HeroSearch({...props}){
                             gridTemplateColumns={'repeat(5, 1fr)'}
                             gap = {2}
                         >
-                            {TrendingSearch.map((item,index) => {
-                                return(
-                                    <GridItem key = { index } 
-                                        gridColumn={{
-                                            base: 'span 5',
-                                            md: 'span 1'
-                                        }}
-                                    >
-                                        <Button gap = {4} color = {'gray.500'} _hover = {{color:'gray.800'}} rounded = {'13px'} variant = {'outline'} w = {'full'}>
-                                            <Icon as = {SlGraph} />
-                                            {item.name}
-                                        </Button>
-                                    </GridItem>
-                                )
-                            })}
+                            {TrendingSearch.map((item,index) => (
+                                <GridItem key = { index } 
+                                    gridColumn={{
+                                        base: 'span 5',
+                                        md: 'span 1'
+                                    }}
+                                >
+                                    <Button gap = {4} color = {'gray.500'} _hover = {{color:'gray.800'}} rounded = {'13px'} variant = {'outline'} w = {'full'}>
+                                        <Icon as = {SlGraph} />
+                                        {item.name}
+                                    </Button>
+                                </GridItem>
+                            ))}
                         </Grid>
                     </Box>
                 </Fade>
