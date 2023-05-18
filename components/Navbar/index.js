@@ -17,10 +17,11 @@ const ModalPengantaran = ({ isOpen, onClose }) => {
     const [alamat, setAlamat] = useState('');
 
     useLayoutEffect(() => {
-        if(localStorage.getItem('alamat') !== null){
-            setAlamat(localStorage.getItem('alamat'));
+        const alamatStorage = localStorage.getItem('alamat');
+        if(alamatStorage !== null){
+            setAlamat(alamatStorage);
         }
-
+        
     }, []);
 
     const handleAlamat = () => {
@@ -62,7 +63,18 @@ export default function Navbar(){
     const [showModal, setShowModal] = useState(false);
     const [showCart, setShowCart] = useState(false);
 
+    const [alamatStorage, setAlamatStorage] = useState('');
+
     const router = useRouter();
+
+    useLayoutEffect(() => {
+        const alamat = localStorage.getItem('alamat');
+        if(alamat !== null || alamat !== ''){
+            setAlamatStorage(alamat);
+        }
+
+    }, [alamatStorage]);
+
 
     return(
         <Box 
@@ -141,7 +153,7 @@ export default function Navbar(){
                             </Flex>
                             <Text display = {{ base: 'none', lg: 'block' }}>
                                 {
-                                    localStorage.getItem('alamat') !== null ? localStorage.getItem('alamat') : 'Pilih Lokasi'
+                                    alamatStorage !== null ? alamatStorage : 'Pilih Lokasi'
                                 }
                             </Text>
                         </Flex>
