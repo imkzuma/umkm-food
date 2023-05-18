@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 
 export default function AuthLayout({ children }){
     return(
@@ -10,15 +10,20 @@ export default function AuthLayout({ children }){
         >
             <Box
                 pos = {'absolute'}
-                top = {{base: 0, md: '30px'}}
+                top = {{base: '10px', md: '30px'}}
             >
-                <Text>Logo</Text>
+                <Link href = "/">
+                    <Image 
+                        src = "/img/logo.png"
+                        alt = "Logo"
+                    />
+                </Link>
             </Box>
             
             <Box
                 w = {"full"}
                 px = {{ md: '138px', base: '10px' }}
-                py = {{ md: '0px', base: '50px' }}
+                py = {{ md: '0px', base: '60px' }}
             >
                 {children}
             </Box>
