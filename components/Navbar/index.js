@@ -1,7 +1,7 @@
 import { 
     Box, Flex, Icon, Menu, useDisclosure, 
     Stack, IconButton, Divider, Link, Text, Button,
-    Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image
+    Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image, FormControl, FormLabel, Input
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
@@ -10,25 +10,47 @@ import { BsGeoAltFill } from 'react-icons/bs';
 
 import UserMenuComponents from "./UserMenu";
 import NotificationMenu from "./NotificationMenu";
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import { useRouter } from "next/router";
 
 const ModalPengantaran = ({ isOpen, onClose }) => {
+    const [alamat, setAlamat] = useState('');
+
+    useLayoutEffect(() => {
+        if(localStorage.getItem('alamat') !== null){
+            setAlamat(localStorage.getItem('alamat'));
+        }
+
+    }, []);
+
+    const handleAlamat = () => {
+        if(alamat !== ''){
+            localStorage.setItem('alamat', alamat);
+            onClose();
+        }
+    }
     return(
         <Modal isOpen={isOpen} onClose={onClose} isCentered>
             <ModalOverlay />
             <ModalContent>
-                <ModalHeader>Modal Title</ModalHeader>
+                <ModalHeader>
+                    Pilih Lokasi Antar
+                </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, possimus?
+                    <FormControl id="alamat">
+                        <FormLabel>Alamat Pengantaran</FormLabel>
+                        <Input type="text" value = {alamat} onChange = {(e) => setAlamat(e.target.value)} />
+                    </FormControl>
                 </ModalBody>
 
                 <ModalFooter>
-                <Button colorScheme="blue" mr={3} onClick={onClose}>
-                    Close
+                <Button colorScheme="blue" mr={3} onClick={handleAlamat}>
+                    Submit
                 </Button>
-                <Button variant="ghost">Secondary Action</Button>
+                <Button variant="outline" bg = {'red'} color = {'white'} _hover={{bg: 'red'}} onClick = {onClose}>
+                    Cancel
+                </Button>
                 </ModalFooter>
             </ModalContent>
         </Modal>
@@ -118,7 +140,9 @@ export default function Navbar(){
                                 </Text>
                             </Flex>
                             <Text display = {{ base: 'none', lg: 'block' }}>
-                                Pilih Lokasi Antar
+                                {
+                                    localStorage.getItem('alamat') !== null ? localStorage.getItem('alamat') : 'Pilih Lokasi'
+                                }
                             </Text>
                         </Flex>
 
