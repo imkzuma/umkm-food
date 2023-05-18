@@ -33,14 +33,13 @@ export default function SectionRekomendasi(){
                     size = {{ base: "lg", md: "xl" }}
                     fontWeight={"semibold"}
                 >
-                    Want advice? Check this out
+                    Ingin Saran Makanan? Lihat ini
                 </Heading>
                 <Text 
                     w = {{ md: '600px', base: 'full' }} 
                     color = {'gray.500'}
                 >
-                    Come on, check out our collection of popular foods, local foodies 
-                    favorites, and our best offers at your location!
+                    Yuk, cek koleksi makanan populer, favorit pecinta kuliner lokal, dan penawaran terbaik kami di lokasi Anda!
                 </Text>
             </Stack>
             <Grid

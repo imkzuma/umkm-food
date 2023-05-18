@@ -13,8 +13,8 @@ export default function LoginComponents(){
         >
             <Flex justifyContent={'end'} display = {{ base: "none", lg: "flex" }}>
                 <SideHeroAuth
-                    title = "Order Your Favorite Food Online"
-                    paragraph = "Join us and enjoy the convenience of ordering food online with our app."
+                    title = "Pesan Makanan Favorit Anda Secara Online"
+                    paragraph = "Bergabunglah dengan kami dan nikmati kemudahan memesan makanan secara online dengan aplikasi kami."
                     image = "/img/login.png"
                 />
             </Flex>
@@ -35,7 +35,7 @@ export default function LoginComponents(){
                             Login
                         </Text>
                         <Text color = {"#40444E"} fontWeight={'500'}>
-                            Don&apos;t have an account? <Link href = {'/auth/register'} color = {"#E42535"}>Register</Link>
+                            Tidak Punya Akun? <Link href = {'/auth/register'} color = {"#E42535"}>Daftar</Link>
                         </Text>
                     </Stack>
                     <Button
@@ -59,7 +59,7 @@ export default function LoginComponents(){
                     <HStack>
                         <Divider bg = {'#0000001F'} h = {'1px'} />
                         <Text color = {'#AAB4C8'} whiteSpace="nowrap" px = {2}>
-                            or login with
+                            atau login dengan
                         </Text>
                         <Divider bg = {'#0000001F'} h = {'1px'} />
                     </HStack>

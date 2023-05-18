@@ -30,8 +30,7 @@ export default function Footer(){
                             </Text>
                         </Flex>
                         <Text fontWeight={'300'} lineHeight={1.8}>
-                            &copy;   2023 Food Ordering App | Thanks for using Food Ordering App. Our copyrights and trademarks 
-                            are protected by intellectual property laws and registered in relevant institutions in Indonesia. 
+                            &copy;   2023 Food Ordering App | Terima kasih telah menggunakan Aplikasi Pemesanan Makanan. Hak cipta dan merek dagang kami dilindungi oleh undang-undang kekayaan intelektual dan terdaftar di lembaga terkait di Indonesia.
                         </Text>
                     </Stack>
                 </GridItem>

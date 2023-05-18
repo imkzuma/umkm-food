@@ -15,8 +15,8 @@ export default function RegisterComponents(){
         >
             <Flex justifyContent={'end'} display = {{ base: "none", lg: "flex" }}>
                 <SideHeroAuth
-                    title = "Satisfy Your Hunger with Us"
-                    paragraph = "Register now and enjoy the convenience of ordering food from the restaurant of your choice."
+                    title = "Puaskan Rasa Lapar Anda Bersama Kami"
+                    paragraph = "Daftar sekarang dan nikmati kemudahan memesan makanan dari restoran pilihan Anda."
                     image = "/img/register.png"
                 />
             </Flex>
@@ -34,10 +34,10 @@ export default function RegisterComponents(){
                 >
                     <Stack textAlign={'center'}>
                         <Text color = {"#40444E"} fontSize={'25px'} fontWeight={'700'}>
-                            Register
+                            Daftar
                         </Text>
                         <Text color = {"#40444E"} fontWeight={'500'}>
-                            Alredy have an account? <Link href = {'/auth/login'} color = {"#E42535"}>Login</Link>
+                            Sudah Punya Akun? <Link href = {'/auth/login'} color = {"#E42535"}>Masuk</Link>
                         </Text>
                     </Stack>
 

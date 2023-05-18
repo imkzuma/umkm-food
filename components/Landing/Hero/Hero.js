@@ -35,7 +35,7 @@ export default function HeroComponent(){
                         size={{ base: 'xl', md: '2xl' }} 
                         color = "white"
                     >
-                        Hungry? Just Order it
+                        Lapar? Pesan Saja Disini
                     </Heading>
 
                     <Text 
@@ -43,8 +43,8 @@ export default function HeroComponent(){
                         fontWeight={'400'} 
                         color = "white"
                     >
-                        Order your favorite meals here, on our web. Same fast delivery. Countless restos to try. 
-                        Enjoy dining from home.
+                        Pesan makanan favorit Anda di sini. Pengiriman cepat. Resto yang tak terhitung jumlahnya untuk dicoba.
+                        Nikmati makan dari rumah.
                     </Text>
                 </Stack>
             </Flex>

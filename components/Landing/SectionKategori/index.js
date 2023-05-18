@@ -18,7 +18,7 @@ export default function SectionKategori(){
                     size = {{ base: 'lg', md: 'xl' }}
                     fontWeight={'semibold'}
                 >
-                    Looking for inspiration? Start here
+                    Mencari Inspirasi makanan? Lihat disini
                 </Heading>
             </Center>
             <Grid

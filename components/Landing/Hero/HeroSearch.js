@@ -85,7 +85,7 @@ export default function HeroSearch({...props}){
                                 </Text>
                             </Flex>
                         :   <Flex alignItems={'center'} justifyContent={'space-between'} gap = {3}>
-                                <Text fontWeight={'semibold'}>Recent Searches</Text>
+                                <Text fontWeight={'semibold'}>History</Text>
                                 <Button size={'sm'} onClick = {clearSearchHistory}>Clear</Button>
                             </Flex>
                     }
