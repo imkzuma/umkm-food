@@ -1,7 +1,7 @@
 import { 
     Box, Flex, Icon, Menu, useDisclosure, 
     Stack, IconButton, Divider, Link, Text, Button,
-    Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter
+    Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Image
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
@@ -11,6 +11,7 @@ import { BsGeoAltFill } from 'react-icons/bs';
 import UserMenuComponents from "./UserMenu";
 import NotificationMenu from "./NotificationMenu";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const ModalPengantaran = ({ isOpen, onClose }) => {
     return(
@@ -37,12 +38,15 @@ const ModalPengantaran = ({ isOpen, onClose }) => {
 export default function Navbar(){
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [showModal, setShowModal] = useState(false);
+    const [showCart, setShowCart] = useState(false);
+
+    const router = useRouter();
 
     return(
         <Box 
             bg = {'white'} 
             borderBottom = { '1px solid #E8E8E8' }
-            px = {{ md: '138px', base: '5px' }}
+            px = {{ lg: '138px', md: '25px', base: '5px' }}
             position={'sticky'} top={'0'} zIndex={'10'}
         >
             <ModalPengantaran isOpen={showModal} onClose={() => setShowModal(false)} />
@@ -52,16 +56,39 @@ export default function Navbar(){
                 alignItems = {'center'}
                 justifyContent = {'space-between'}
             >
-                <Flex alignItems = {'center'}>
+                <Flex alignItems = {'center'} gap = {{base: 2, lg: 7}}>
                     <IconButton
                         size = {'md'}
                         bg = {'white'}
                         icon = { isOpen ? <CloseIcon /> : <HamburgerIcon /> }
                         aria-label = {'open-menu'}
-                        display = {{ md: 'none' }}
+                        display = {{ lg: 'none' }}
                         onClick = { isOpen ? onClose : onOpen }
                     />
-                    <Box>Logo</Box>
+                    <Box>
+                        <Image 
+                            src = "/img/logo.png"
+                            alt = "logo"
+                        />
+                    </Box>
+                    <Link 
+                        href = "/" 
+                        display = {{ base: 'none', lg: 'block' }} 
+                        _hover={{
+                            textDecoration: "none"
+                        }}
+                    >
+                        <Button
+                            variant = {'unstyled'}
+                            fontSize = {'14px'}
+                            fontWeight = {'600'}
+                            rounded={0}
+                            borderBottom={router.pathname === '/' ? '1px solid red' : null}
+                            color = {router.pathname === '/' ? 'red' : 'gray.900'}
+                        >
+                            Home
+                        </Button>
+                    </Link>
                 </Flex>
 
                 <Flex 
@@ -72,29 +99,30 @@ export default function Navbar(){
                         alignItems={'center'}
                         spacing = {'22px'}
                     >
-                        <Flex as = {Button} bg = {"red.100"} _hover = {{bg:'red.200'}} alignItems={'center'} gap = {2} onClick={() => setShowModal(true)}>
+                        <Flex as = {Button}
+                            color = {"white"} 
+                            bg = {"#E52535"} 
+                            alignItems={'center'} 
+                            gap = {2} 
+                            _hover = {{bg:'#E52535'}} 
+                            onClick={() => setShowModal(true)}
+                        >
                             <Flex alignItems={'center'} gap = {1}>
                                 <Icon as = {BsGeoAltFill} 
                                     m="0"
                                     fontSize = "xl" 
-                                    color = {'#727272'}
                                     cursor = {'pointer'}
-                                    _hover = {{
-                                        color : "gray.600",
-                                        transition: "0.3s ease-in"
-                                    }} 
                                 />
-                                <Text display = {{ base: 'none', md: 'block' }} fontWeight={'semibold'}>
+                                <Text display = {{ base: 'none', lg: 'block' }} fontWeight={'semibold'}>
                                     Antar ke: 
                                 </Text>
                             </Flex>
-                            <Text display = {{ base: 'none', md: 'block' }}>
+                            <Text display = {{ base: 'none', lg: 'block' }}>
                                 Pilih Lokasi Antar
                             </Text>
-                            
                         </Flex>
 
-                        <Link href = "#" display={'flex'}>
+                        {/* <Link href = "#" display={'flex'}>
                             <Icon as = {FaShoppingCart} 
                                 m="0"
                                 fontSize = "xl" 
@@ -105,7 +133,7 @@ export default function Navbar(){
                                     transition: "0.3s ease-in"
                                 }} 
                             />
-                        </Link>
+                        </Link> */}
 
                         <Menu isLazy>
                             <NotificationMenu />
