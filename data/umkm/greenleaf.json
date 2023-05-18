@@ -1,0 +1,126 @@
+[
+    {
+        "detail_umkm" : [
+            {
+                "name" : "GreenLeaf",
+                "type" : "Vegetarian Cuisine",
+                "address" : "Jl. Bali Cliff No. 11, Uluwatu, Bali",
+                "work_hour" : "08.00 - 22.00 WITA",
+                "rating" : [
+                    {
+                        "star" : 4.3,
+                        "review" : "1.8k"
+                    }
+                ],
+                "is_halal" : true,
+                "price" : "30k - 80k",
+                "hygienic" : [
+                    {
+                        "is_hygiene" : true,
+                        "rating" : 400
+                    }
+                ],
+                "image" : "greenleaf.png"
+            }
+        ],
+        "review":[
+            {
+                "id": 1,
+                "name": "Darius Satria",
+                "review": "Makanan di GreenLeaf luar biasa! Begitu banyak pilihan vegetarian yang lezat.",
+                "date_review": "05/03/2023",
+                "star": 5,
+                "like": 15,
+                "dislike": 0,
+                "replied" : null
+            },
+            {
+                "id": 2,
+                "name": "Eko Prasetyo",
+                "review": "Sebagai seorang vegetarian, saya menghargai memiliki restoran khusus seperti GreenLeaf. Rasanya luar biasa.",
+                "date_review": "07/03/2023",
+                "star": 4,
+                "like": 8,
+                "dislike": 2,
+                "replied" : [
+                    {
+                        "id": 1,
+                        "name" : "GreenLeaf",
+                        "reply" : "Terima kasih atas kata-kata baik Anda, Michael. Kami senang Anda menikmati hidangan vegetarian kami!",
+                        "date_reply" : "08/03/2023",
+                        "like" : 10,
+                        "dislike" : 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "recomended": [
+            {
+                "id": 1,
+                "name": "Nasi Goreng Sayuran",
+                "price": 25000,
+                "image": "nasi_goreng_sayuran.png",
+                "stock": 5
+            },
+            {
+                "id": 2,
+                "name": "Pasta Brokoli",
+                "price": 35000,
+                "image": "pasta_brokoli.png",
+                "stock": 3
+            },
+            {
+                "id": 3,
+                "name": "Tumis Tahu Tempe",
+                "price": 30000,
+                "image": "tumis_tahu_tempe.png",
+                "stock": 8
+            }
+        ]
+    },
+    {
+        "makanan": [
+            {
+                "id": 1,
+                "name": "Nasi Goreng Sayuran",
+                "price": 25000,
+                "image": "nasi_goreng_sayuran.png",
+                "stock": 5
+            },
+            {
+                "id": 2,
+                "name": "Pasta Brokoli",
+                "price": 35000,
+                "image": "pasta_brokoli.png",
+                "stock": 3
+            },
+            {
+                "id": 3,
+                "name": "Tumis Tahu Tempe",
+                "price": 30000,
+                "image": "tumis_tahu_tempe.png",
+                "stock": 8
+            }
+        ]
+    },
+    {
+        "minuman": [
+            {
+                "id": 1,
+                "name": "Jus Alpukat",
+                "price": 20000,
+                "image": "jus_alpukat.png",
+                "stock": 10
+            },
+            {
+                "id": 2,
+                "name": "Jus Wortel",
+                "price": 15000,
+                "image": "jus_wortel.png",
+                "stock": 5
+            }
+        ]
+    }
+]

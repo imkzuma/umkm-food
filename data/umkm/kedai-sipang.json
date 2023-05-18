@@ -1,0 +1,158 @@
+[
+    {
+        "detail_umkm" : [
+            {
+                "name" : "Kedai Sipang, Puri Gading Jimbaran",
+                "type" : "Seafood, Rice, Noodles",
+                "address" : "Puri Gading Jimbaran.Jalan Nuri Blok B4 No 25",
+                "work_hour" : 24,
+                "rating" : [
+                    {
+                        "star" : 4.4,
+                        "review" : "300+"
+                    }
+                ],
+                "is_halal" : true,
+                "price" : "40k - 100k",
+                "hygienic" : [
+                    {
+                        "is_hygiene" : true,
+                        "rating" : 80
+                    }
+                ],
+                "image" : "kedaiSipang.png"
+            }
+        ],
+        "review":[
+            {
+                "id": 1,
+                "name": "Putri",
+                "review": "suka bngeeettt pkok nya the best..",
+                "date_review": "09/05/2023",
+                "star": 5,
+                "like": 10,
+                "dislike": 3,
+                "replied" : [
+                    {
+                        "id": 1,
+                        "name" : "Kedai Sipang, Puri Gading Jimbaran",
+                        "reply" : "Terima kasih Bu Putry atas ulasan dan rating yang di berikan kepada kami. Suatu kebahagiaan selama ini tetap bisa menyajikan terbaik untuk ibu. Salam hangat sehat selalu dan senantiasa berbahagia menyertai",
+                        "date_review": "09/05/2023",
+                        "like" : 0,
+                        "dislike" : 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "recomended" : [
+            {
+                "id" : 1,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            }
+        ]
+    },
+    {
+        "makanan" : [
+            {
+                "id" : 1,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            },
+            {
+                "id" : 5,
+                "name" : "Subarashi Nitche",
+                "price" : 55000,
+                "image" : "kedaiSipang.png",
+                "stock" : 10
+            }
+        ]
+    },
+    {
+        "minuman" : [
+            {
+                "id" : 1,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            },
+            {
+                "id" : 5,
+                "name" : "Blue Sunset",
+                "price" : 25000,
+                "image" : "blue-sunset.png",
+                "stock" : 10
+            }
+        ]
+    }
+]

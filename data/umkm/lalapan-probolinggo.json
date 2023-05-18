@@ -1,0 +1,158 @@
+[
+    {
+        "detail_umkm" : [
+            {
+                "name" : "Lalapan (Probolinggo)",
+                "type" : "Rice, Chicken & duck, Coffee",
+                "address" : "Jalan Puri Gading Banjar Bhuana Gubug Jimbaran",
+                "work_hour" : 24,
+                "rating" : [
+                    {
+                        "star" : 4.6,
+                        "review" : "200+"
+                    }
+                ],
+                "is_halal" : true,
+                "price" : "16k - 40k",
+                "hygienic" : [
+                    {
+                        "is_hygiene" : true,
+                        "rating" : 10
+                    }
+                ],
+                "image" : "lalapanProbolinggo.png"
+            }
+        ],
+        "review":[
+            {
+                "id": 1,
+                "name": "Puji Astutik",
+                "review": "2 kali order mantap...mwnunya nampuol rsanya enak buangettt",
+                "date_review": "11/05/2023",
+                "star": 5,
+                "like": 6,
+                "dislike": 1,
+                "replied" : [
+                    {
+                        "id": 1,
+                        "name" : "Lalapan (Probolinggo)",
+                        "reply" : "Terimakasih",
+                        "date_review": "11/05/2023",
+                        "like" : 0,
+                        "dislike" : 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "recomended" : [
+            {
+                "id" : 1,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 0
+            }
+        ]
+    },
+    {
+        "makanan" : [
+            {
+                "id" : 1,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            },
+            {
+                "id" : 5,
+                "name" : "Ayam Bakar",
+                "price" : 25000,
+                "image" : "ayam-bakar.png",
+                "stock" : 10
+            }
+        ]
+    },
+    {
+        "minuman" : [
+            {
+                "id" : 1,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 1
+            },
+            {
+                "id" : 2,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 0
+            },
+            {
+                "id" : 3,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 1
+            },
+            {
+                "id" : 4,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 0
+            },
+            {
+                "id" : 5,
+                "name" : "Es Jeruk",
+                "price" : 7000,
+                "image" : "es-jeruk.png",
+                "stock" : 1
+            }
+        ]
+    }
+]

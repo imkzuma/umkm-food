@@ -1,0 +1,117 @@
+[
+    {
+        "detail_umkm": [
+            {
+                "name": "Warung Halal Berkah",
+                "type": "Makanan Halal",
+                "address": "Jl Raya Uluwatu Gg. X No 5, Jimbaran, Bali",
+                "work_hour": "09.00 - 21.00 WITA",
+                "rating": [
+                    {
+                        "star": 4.1,
+                        "review": "2k+"
+                    }
+                ],
+                "is_halal": true,
+                "price": "10k - 50k",
+                "hygienic": [
+                    {
+                        "is_hygiene": true,
+                        "rating": 180
+                    }
+                ],
+                "image": "nasi_goreng_halal.png"
+            }
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Haji Mamat",
+                "review": "Makanan di sini enak dan terjamin kehalalannya.",
+                "date_review": "10/05/2023",
+                "star": 5,
+                "like": 15,
+                "dislike": 0,
+                "replied": null
+            },
+            {
+                "id": 2,
+                "name": "Hajah Maimunah",
+                "review": "Tempatnya nyaman dan pelayanannya ramah. Makanannya cocok untuk keluarga yang menginginkan makanan halal.",
+                "date_review": "15/05/2023",
+                "star": 4.5,
+                "like": 10,
+                "dislike": 2,
+                "replied": null
+            }
+        ]
+    },
+    {
+        "recomended": [
+            {
+                "id": 1,
+                "name": "Nasi Goreng Halal",
+                "price": 15000,
+                "image": "nasi_goreng_halal.png",
+                "stock": 8
+            },
+            {
+                "id": 2,
+                "name": "Ayam Bakar Halal",
+                "price": 25000,
+                "image": "ayam_bakar_halal.png",
+                "stock": 5
+            },
+            {
+                "id": 3,
+                "name": "Lontong Sayur Halal",
+                "price": 20000,
+                "image": "lontong_sayur_halal.png",
+                "stock": 10
+            }
+        ]
+    },
+    {
+        "makanan": [
+            {
+                "id": 1,
+                "name": "Nasi Goreng Halal",
+                "price": 15000,
+                "image": "nasi_goreng_halal.png",
+                "stock": 8
+            },
+            {
+                "id": 2,
+                "name": "Ayam Bakar Halal",
+                "price": 25000,
+                "image": "ayam_bakar_halal.png",
+                "stock": 5
+            },
+            {
+                "id": 3,
+                "name": "Lontong Sayur Halal",
+                "price": 20000,
+                "image": "lontong_sayur_halal.png",
+                "stock": 10
+            }
+        ]
+    },
+    {
+        "minuman": [
+            {
+                "id": 1,
+                "name": "Es Teh Halal",
+                "price": 5000,
+                "image": "es_teh_halal.png",
+                "stock": 15
+            },
+            {
+                "id": 2,
+                "name": "Es Buah Halal",
+                "price": 10000,
+                "image": "es_buah_halal.png",
+                "stock": 10
+            }
+        ]
+    }
+]

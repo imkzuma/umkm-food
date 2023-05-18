@@ -1,0 +1,117 @@
+[
+    {
+        "detail_umkm": [
+            {
+                "name": "Warung Sehat Bahagia",
+                "type": "Makanan Gluten-Free",
+                "address": "Jl. Raya Uluwatu No.138A, Jimbaran, Bali",
+                "work_hour": "08.00 - 22.00 WITA",
+                "rating": [
+                    {
+                        "star": 4.2,
+                        "review": "800+"
+                    }
+                ],
+                "is_halal": true,
+                "price": "20k - 80k",
+                "hygienic": [
+                    {
+                        "is_hygiene": true,
+                        "rating": 150
+                    }
+                ],
+                "image": "roti_quinoa.png"
+            }
+        ],
+        "review": [
+            {
+                "id": 1,
+                "name": "Surya Wijaya",
+                "review": "Makanan di sini enak dan sehat. Cocok untuk orang yang intoleran gluten.",
+                "date_review": "10/04/2023",
+                "star": 5,
+                "like": 12,
+                "dislike": 1,
+                "replied": null
+            },
+            {
+                "id": 2,
+                "name": "Farhan Maulana",
+                "review": "Tempatnya nyaman dan pelayanannya ramah. Menu gluten-free-nya variatif.",
+                "date_review": "15/04/2023",
+                "star": 4,
+                "like": 8,
+                "dislike": 0,
+                "replied": null
+            }
+        ]
+    },
+    {
+        "recomended": [
+            {
+                "id": 1,
+                "name": "Roti Quinoa",
+                "price": 15000,
+                "image": "roti_quinoa.png",
+                "stock": 8
+            },
+            {
+                "id": 2,
+                "name": "Pasta Jagung",
+                "price": 25000,
+                "image": "pasta_jagung.png",
+                "stock": 5
+            },
+            {
+                "id": 3,
+                "name": "Salad Bayam",
+                "price": 20000,
+                "image": "salad_bayam.png",
+                "stock": 10
+            }
+        ]
+    },
+    {
+        "makanan": [
+            {
+                "id": 1,
+                "name": "Roti Quinoa",
+                "price": 15000,
+                "image": "roti_quinoa.png",
+                "stock": 8
+            },
+            {
+                "id": 2,
+                "name": "Pasta Jagung",
+                "price": 25000,
+                "image": "pasta_jagung.png",
+                "stock": 5
+            },
+            {
+                "id": 3,
+                "name": "Salad Bayam",
+                "price": 20000,
+                "image": "salad_bayam.png",
+                "stock": 10
+            }
+        ]
+    },
+    {
+        "minuman": [
+            {
+                "id": 1,
+                "name": "Jus Pepaya",
+                "price": 15000,
+                "image": "jus_pepaya.png",
+                "stock": 7
+            },
+            {
+                "id": 2,
+                "name": "Jus Wortel",
+                "price": 12000,
+                "image": "jus_wortel.png",
+                "stock": 5
+            }
+        ]
+    }
+]

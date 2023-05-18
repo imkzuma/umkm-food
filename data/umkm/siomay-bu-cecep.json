@@ -1,0 +1,158 @@
+[
+    {
+        "detail_umkm" : [
+            {
+                "name" : "Warung Siomay Bandung Ibu Cecep, Puri Gading",
+                "type" : "Snacks",
+                "address" : "Jl.Puri Gading No.9, Jimbaran, Kecamatan Kuta Selatan, Kabupaten Badung, Bali (Toko Gopala)",
+                "work_hour" : "10.00 - 20.00 WITA",
+                "rating" : [
+                    {
+                        "star" : 4.5,
+                        "review" : "100+"
+                    }
+                ],
+                "is_halal" : true,
+                "price" : "16k - 40k",
+                "hygienic" : [
+                    {
+                        "is_hygiene" : true,
+                        "rating" : 10
+                    }
+                ],
+                "image" : "siomayBuCecep.png"
+            }
+        ],
+        "review":[
+            {
+                "id": 1,
+                "name": "Boyong perdana",
+                "review": "mantafff tiada duanya...paling enak dan paling fresh",
+                "date_review": "15/04/2022",
+                "star": 5,
+                "like": 9,
+                "dislike": 2,
+                "replied" : [
+                    {
+                        "id": 1,
+                        "name" : "Warung Siomay Bandung Ibu Cecep, Puri Gading",
+                        "reply" : "trimakasih semoga kembali",
+                        "date_review": "15/04/2022",
+                        "like" : 0,
+                        "dislike" : 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "recomended" : [
+            {
+                "id" : 1,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            },
+            {
+                "id" : 2,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 0
+            }
+        ]
+    },
+    {
+        "makanan" : [
+            {
+                "id" : 1,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            },
+            {
+                "id" : 3,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            },
+            {
+                "id" : 4,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            },
+            {
+                "id" : 5,
+                "name" : "Siomay Bandung",
+                "price" : 25000,
+                "image" : "siomay-bandung.png",
+                "stock" : 10
+            }
+        ]
+    },
+    {
+        "minuman" : [
+            {
+                "id" : 1,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            },
+            {
+                "id" : 2,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 0
+            },
+            {
+                "id" : 3,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            },
+            {
+                "id" : 4,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 0
+            },
+            {
+                "id" : 5,
+                "name" : "Es Teh",
+                "price" : 5000,
+                "image" : "es-teh.png",
+                "stock" : 1
+            }
+        ]
+    }
+]
