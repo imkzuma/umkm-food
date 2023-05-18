@@ -46,7 +46,7 @@ export default function CardRekomendasi({ name, jenis, jarak, rating, image, hre
                             }}
                         >
                             <Image 
-                                src = {`/img/landing/section-rekomendasi/${image}`}
+                                src = {`/img/umkm/${image}`}
                                 rounded = {'xl'}
                                 objectFit={'cover'}
                                 w = {{ 

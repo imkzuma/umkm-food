@@ -61,23 +61,6 @@ export default function SectionRekomendasi(){
                     )
                 })}
             </Grid>
-            <Grid
-                gridTemplateColumns={'repeat(12, 1fr)'}
-                gap = {'24px'}
-            >
-                {DataRekomendasi.map((item) => {
-                    return(
-                        <CardRekomendasi key = {item.id}
-                            name = {item.name}
-                            jenis = {item.jenis}
-                            jarak = {item.jarak}
-                            image = {item.image}
-                            rating = {item.rating}
-                            href = {item.href}
-                        />
-                    )
-                })}
-            </Grid> 
         </Box>
     )
 }
