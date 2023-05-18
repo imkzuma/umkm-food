@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Text } from "@chakra-ui/react";
+import { Box, Center, Grid, Heading, Text } from "@chakra-ui/react";
 import CardKategori from "./CardKategori";
 
 const KategoriData = [
@@ -14,9 +14,12 @@ export default function SectionKategori(){
     return(
         <Box py = {{  base: '80px' }} transition={'0.3s ease'}>
             <Center>
-                <Text fontSize = {'24px'} fontWeight={'bold'}>
-                    Looking for inspo? Start here
-                </Text>
+                <Heading 
+                    size = {{ base: 'lg', md: 'xl' }}
+                    fontWeight={'semibold'}
+                >
+                    Looking for inspiration? Start here
+                </Heading>
             </Center>
             <Grid
                 gridTemplateColumns={'repeat(6, 1fr)'}
