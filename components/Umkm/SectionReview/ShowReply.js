@@ -96,7 +96,6 @@ export default function ShowReply({ data }){
                     </Box>
                 </Flex>
             ))}
-        </>
-            
+        </>       
     )
 }
