@@ -1,19 +1,22 @@
-import { Box, Flex, Grid, GridItem, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Image, Stack, Text } from "@chakra-ui/react";
+import { LogoOnlyWhite } from "../Logo";
 
 export default function Footer(){
     return(
         <Box
             w = {'full'}
             bg = {'#E52535'}
-            px = {{ md: '138px', base: '5px' }}
+            px = {{ lg: '138px', md: '25px', base: '5px' }}
             py = {10}
         >
             <Grid
                 gridTemplateColumns={'repeat(12, 1fr)'}
+                alignItems = {'center'}
             >
                 <GridItem
                     colSpan={{
                         base: 12,
+                        md: 8,
                         lg: 6
                     }}
                 >
@@ -31,6 +34,18 @@ export default function Footer(){
                             are protected by intellectual property laws and registered in relevant institutions in Indonesia. 
                         </Text>
                     </Stack>
+                </GridItem>
+
+                <GridItem 
+                    colSpan={{
+                        base: 12, 
+                        md: 4,
+                        lg: 6
+                    }}
+                >
+                    <Flex justifyContent={{ base: 'center', md: 'end' }}>
+                        <LogoOnlyWhite boxSize={'4rem'} />
+                    </Flex>
                 </GridItem>
 
             </Grid>
