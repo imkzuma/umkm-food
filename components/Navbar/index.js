@@ -75,7 +75,6 @@ export default function Navbar(){
 
     }, [alamatStorage]);
 
-
     return(
         <Box 
             bg = {'white'} 

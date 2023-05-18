@@ -19,15 +19,6 @@
         "href": "/umkm/bu-oki"
     },
     { 
-        "id": 3, 
-        "name": "Padang Murah, Graha Anyar", 
-        "jenis": "Masakan khas padang", 
-        "jarak": "1 km", 
-        "image": "padang.png", 
-        "rating": 4.7, 
-        "href": "/umkm/padang-murah"
-    },
-    { 
         "id": 4, 
         "name": "Warung Puspa Masakan Khas Singaraja, Uluwatu", 
         "jenis": "Aneka nasi (babi + ayam)", 
