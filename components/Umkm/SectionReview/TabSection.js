@@ -25,6 +25,15 @@ export default function TabReview({ detail }){
     }, [detail]);
 
     const BtnLiked = (key) => {
+        if(isDisliked[key - 1].disliked){
+            setIsDisliked((prev) => prev.map((item) =>
+                item.id === key ? {
+                    ...item,
+                    disliked: !item.disliked,
+                    dislike: item.disliked ? item.dislike - 1 : item.dislike + 1
+                } : item
+            ));
+        }
         setIsLiked((prev) => prev.map((item) =>
                 item.id === key ? { 
                     ...item,
@@ -36,6 +45,15 @@ export default function TabReview({ detail }){
     }
 
     const BtnDisliked = (key) => {
+        if(isLiked[key - 1].liked){
+            setIsLiked((prev) => prev.map((item) =>
+                item.id === key ? {
+                    ...item,
+                    liked: !item.liked,
+                    like: item.liked ? item.like - 1 : item.like + 1
+                } : item
+            ));
+        }
         setIsDisliked((prev) => prev.map((item) =>
             item.id === key ? {
                 ...item,
@@ -147,19 +165,22 @@ export default function TabReview({ detail }){
                                                 </Flex>
                                             </Stack>
                                             <Stack direction={'row'} spacing = {-2} alignItems={'center'}>
-                                                <AccordionButton>
-                                                    <Box
-                                                        border = {'1px solid #E52535'}
-                                                        color = {'#E52535'} 
-                                                        px = {7}
-                                                        py = {2}
-                                                        rounded={'full'}
-                                                        transition={'all .3s ease'}
-                                                        _hover = {{ bg: '#E52535', color: 'white' }}
-                                                    >
-                                                        {isExpanded ? 'Sembunyikan Balasan' : 'Lihat Balasan'}
-                                                    </Box>
-                                                </AccordionButton>
+                                                {item.replied !== null ? (
+                                                    <AccordionButton>
+                                                        <Box
+                                                            border = {'1px solid #E52535'}
+                                                            color = {'#E52535'} 
+                                                            px = {7}
+                                                            py = {2}
+                                                            rounded={'full'}
+                                                            transition={'all .3s ease'}
+                                                            _hover = {{ bg: '#E52535', color: 'white' }}
+                                                        >
+                                                            {isExpanded ? 'Sembunyikan Balasan' : 'Lihat Balasan'}
+                                                        </Box>
+                                                    </AccordionButton>
+                                                ):( null )}
+                                                
                                                 <Button 
                                                     bg={'#E52535'} 
                                                     color = {"white"} 
