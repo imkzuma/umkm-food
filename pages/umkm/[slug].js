@@ -53,7 +53,7 @@ export default function UmkmPage(){
                     )
                     : (
                         <MainLayout>
-                            <Box px = {{ md: '138px', base: '5px' }}>
+                            <Box px = {{ lg: '138px', md: '25px', base: '5px' }}>
                                 <HeroUmkm detail = {detailUmkm} />
                                 <SectionMenu slug = {slug} detail = {detailUmkm} review = {review} />
                             </Box>
