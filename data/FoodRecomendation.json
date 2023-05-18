@@ -8,31 +8,86 @@
         "rating": 4.8, 
         "href": "/umkm/madhtoya"
     },
+    
     { 
         "id": 2, 
-        "name": "Warung Puspa Masakan Khas Singaraja, Uluwatu", 
-        "jenis": "Aneka nasi (babi + ayam)", 
-        "jarak": "0.5 km", 
-        "image": "nasi-campur.png" , 
-        "rating": 4.6, 
-        "href": "/umkm/puspa"
-    },
-    { 
-        "id": 3, 
         "name": "Warung Nasi Ayam Bu Oki", 
-        "jenis": "Nasi Ayam ", 
+        "jenis": "Warung Nasi Ayam Bu Oki", 
         "jarak": "2.1 km", 
         "image": "bu-oki.webp", 
         "rating": 4.8, 
         "href": "/umkm/bu-oki"
     },
     { 
-        "id": 4, 
+        "id": 3, 
         "name": "Padang Murah, Graha Anyar", 
         "jenis": "Masakan khas padang", 
         "jarak": "1 km", 
         "image": "padang.png", 
         "rating": 4.7, 
         "href": "/umkm/padang-murah"
+    },
+    { 
+        "id": 4, 
+        "name": "Warung Puspa Masakan Khas Singaraja, Uluwatu", 
+        "jenis": "Aneka nasi (babi + ayam)", 
+        "jarak": "0.5 km", 
+        "image": "nasi-campur.png", 
+        "rating": 4.7, 
+        "href": "/umkm/puspa"
+    },
+    { 
+        "id": 5, 
+        "name" : "Lalapan (Probolinggo)",
+        "jenis": "Nasi, Ayam & bebek, Kopi",
+        "jarak": "0.35 km", 
+        "image": "lalapanProbolinggo.png", 
+        "rating": 4.6, 
+        "href": "/umkm/lalapan-probolinggo"
+    },
+    { 
+        "id": 6, 
+        "name": "Warung Siomay Bandung Ibu Cecep, Puri Gading",
+        "jenis": "Snacks",
+        "jarak": "0.38 km", 
+        "image": "siomayBuCecep.png", 
+        "rating": 4.5, 
+        "href": "/umkm/siomay-bu-cecep"
+    },
+    { 
+        "id": 7, 
+        "name": "Kedai Sipang, Puri Gading Jimbaran", 
+        "jenis": "Seafood, Rice, Noodles",
+        "jarak": "0.29 km", 
+        "image": "kedaiSipang.png", 
+        "rating": 4.4, 
+        "href": "/umkm/kedai-sipang"
+    },
+    { 
+        "id": 8, 
+        "name": "GreenLeaf",
+        "jenis": "Makanan Vegetarian",
+        "jarak": "1.22 km", 
+        "image": "greenleaf.png", 
+        "rating": 4.3, 
+        "href": "/umkm/greenleaf"
+    },
+    { 
+        "id": 9, 
+        "name": "Warung Sehat Bahagia",
+        "jenis": "Gluten-Free & Allergy Friendly",
+        "jarak": "1.41 km", 
+        "image": "roti_quinoa.png", 
+        "rating": 4.2, 
+        "href": "/umkm/warung-sehat-bahagia"
+    },
+    { 
+        "id": 10, 
+        "name": "Warung Halal Berkah",
+        "jenis": "Makanan Halal",
+        "jarak": "0.69 km", 
+        "image": "nasi_goreng_halal.png", 
+        "rating": 4.1, 
+        "href": "/umkm/warung-halal-berkah"
     }
 ]
