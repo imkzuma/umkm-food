@@ -20,9 +20,9 @@
     { 
         "id": 3, 
         "name": "Warung Nasi Ayam Bu Oki", 
-        "jenis": "Warung Nasi Ayam Bu Oki", 
+        "jenis": "Nasi Ayam ", 
         "jarak": "2.1 km", 
-        "image": "nasi-campur.png", 
+        "image": "bu-oki.webp", 
         "rating": 4.8, 
         "href": "/umkm/bu-oki"
     },
